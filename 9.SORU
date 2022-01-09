@@ -1,0 +1,29 @@
+//  SORU 9  DAİRENİN ÇEVRESİNİN SONUCU   
+package aaa.soru.pkg6;
+
+import java.util.Scanner;
+
+public class AaaSoru6 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner klavye =new Scanner(System.in);
+        
+        float PI =3.14159f;
+        
+        System.out.println("yarı cap değeri giriniz!!");
+        int yc =klavye.nextInt();
+        
+        float cevre =(4*PI*yc);
+        
+        if(yc>0)
+        System.out.println("ÇEMBERİN ÇEVRESİ = "+cevre);
+        
+        else{
+        System.out.println("YANLIŞ DEĞER GİRDİNİZ!!");
+        
+        }
+    }
+    
+}
