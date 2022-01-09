@@ -1,0 +1,30 @@
+//  3.SORU   BİR SAYININ 2 VE 3'E BÖLÜNEBİLME DURUMLARI
+package soru3;
+
+import java.util.Scanner;
+
+public class AaaSoru8 {
+
+   
+    public static void main(String[] args) {
+        
+        Scanner klavye = new Scanner(System.in);
+        System.out.println("bir sayı giriniz .");
+        int x =klavye.nextInt();
+        
+        if(x%2==0 && x%3!=0)
+            System.out.println("SAYI YANLIZCA 2 YE BÖLÜNYOR");
+        
+        else if(x%2!=0 && x%3==0)
+            System.out.println("SAYI YANLIZCA 3 E BÖLÜNÜYOR");
+        else if(x%2==0 && x%3==0)
+            System.out.println("SAYI HEM 2 YE HEMDE 3 E BÖLÜNÜYOR");
+        else {
+            System.out.println("SAYI NE 2 YE NEDE 3 E BÖLÜNMÜYOR ");
+            
+     
+        }
+        
+    }
+    
+}
