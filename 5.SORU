@@ -1,0 +1,25 @@
+// SORU 5    120 TANE ÖĞRENCİNİN NOT ORTALAMASI HESAPLANMASI
+package aaa.soru.pkg2;
+
+import java.util.Scanner;
+
+public class AaaSoru2 {
+
+    
+    public static void main(String[] args) {
+        
+       Scanner input= new Scanner(System.in);
+       
+       int topla =0;
+       
+       for(int i=1;i<121;i++){
+           System.out.println(i+". öğrencininin notunu giriniz : ");
+           int x =input.nextInt();
+           
+           topla = topla+x;
+      
+       }
+       System.out.println("Öğrencilerin notları toplamı = "+(double)(topla/120));
+    }
+    
+}
