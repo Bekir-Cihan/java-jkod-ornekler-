@@ -1,0 +1,19 @@
+//  SORU 6    DAİRENİN ALAN HESAPLANMASI
+package aaa.soru.pkg3;
+
+import java.util.Scanner ;
+public class AaaSoru3 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner klavye = new Scanner(System.in);
+        System.out.println(" lütfen yarı cap değeri giriniz ");
+        double PI= 3.14159;
+        int yarıcap=klavye.nextInt();
+        
+        double x =(PI*yarıcap*yarıcap);
+        System.out.println("dairenin alanı = "+x);
+    }
+    
+}
