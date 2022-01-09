@@ -1,0 +1,27 @@
+//  SORU 10  KULLANICI TARAFINDAN GİRİLEN NOTUN ÜNİVERSİTEDEKİ NOT KARŞILIĞI
+package aaa.soru.pkg7;
+
+import java.util.Scanner;
+
+public class AaaSoru7 {
+
+   
+    public static void main(String[] args) {
+        
+        Scanner klavye = new Scanner(System.in);
+        int not = klavye.nextInt();
+        
+        if(not<=100&& not>85)
+            System.out.println("A");
+        else if( not<85&& not>75)
+            System.out.println("B");
+        else if (not<=75&& not>=50)
+            System.out.println("C");
+        else {
+            System.out.println(" kaldınız....");
+        
+        
+        }
+    }
+    
+}
