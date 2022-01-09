@@ -1,0 +1,23 @@
+// SORU 7     ÜÇ KARDEŞİN YAŞLARI ORTALAMSI
+package aaa.soru.pkg4;
+
+import java.util.Scanner;
+
+public class AaaSoru4 {
+
+    
+    public static void main(String[] args) {
+        Scanner klavye = new Scanner(System.in);
+        System.out.println( " üç kardeşin yaşlarını ekrana giriniz : ");
+        
+        int kardes1 = klavye.nextInt();
+        int kardes2 =klavye.nextInt();
+        int kardes3 = klavye.nextInt();
+        
+        double x =(double)((kardes1+kardes2+kardes3)/3);
+        
+        System.out.println("üç kardeşin yaşları ortalaması = "+x);
+        
+    }
+    
+}
