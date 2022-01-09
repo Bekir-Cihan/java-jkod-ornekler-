@@ -1,0 +1,32 @@
+//  SORU 8  RASTGELE İKİ SAYININ SONUCUNUN TAHMİNİ
+package aaa.soru.pkg5;
+
+import java.util.Scanner;
+
+public class AaaSoru5 {
+
+   
+    public static void main(String[] args) {
+        
+        
+        Scanner klavye = new Scanner(System.in);
+        
+        int num1 = (int)(Math.random()*10);
+        int num2 =(int)(Math.random()*10);
+        
+        System.out.println(num1+" + "+num2+" = ?");
+        
+        int x =klavye.nextInt();
+        
+        if(num1+num2==x)
+            System.out.println("TEBRİKLER");
+        
+        else{
+            System.out.println("cevabınız yanlış doğru cevap = "+(num1+num2));
+        
+        }
+        
+        
+    }
+    
+}
