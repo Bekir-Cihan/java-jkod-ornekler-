@@ -1,0 +1,82 @@
+// SORU 1   taş kağıt makas oyunu 
+package aaa.soru.pkg10;
+
+import java.util.Scanner;
+
+
+public class AaaSoru10 {
+
+    
+    public static void main(String[] args) {
+       
+         Scanner input1 = new Scanner(System.in);
+        System.out.println("tas(0),kağıt(1) ve makas(2)  hangisi?");
+        System.out.println("************************************************");
+        int a = input1.nextInt();
+      
+        switch (a) {
+            case 0:
+                System.out.print("KULLANICI TAŞ ");
+                break;
+            case 1:
+                System.out.print("KULLANICI KAĞIT ");
+                break;
+            case 2:
+                System.out.print("KULLANICI MAKAS ");
+                break;
+            default:
+                System.out.println(" YANLIŞ SAYI GİRDİNİZ.");
+                System.exit(a);
+        }
+        int b = (int) (Math.random() *3);
+        switch (b) {
+            case 0:
+                System.out.print("Bilgisayar TAŞ, ");
+                break;
+            case 1:
+                System.out.print("Bilgisayar KAĞIT, ");
+                break;
+            case 2:
+                System.out.print("Bilgisayar MAKAS, ");
+                break;
+            default:
+                System.out.println(" YANLIŞ SAYI GİRDİNİZ.");
+                System.exit(b);
+
+        }
+
+        if ((a==0 && b==0))
+            System.out.print("BERABERE KALDNIZ.");
+        else if((a==1 && b==1))
+            System.out.print("BERABERE KALDNIZ.");
+        else if((a==2 && b==2))
+            System.out.print("BERABERE KALDNIZ.");    
+        ///////////////////////////////////////////////////////////////////////
+        else if (a==2 && b== 1) 
+            System.out.print(" KAZANDINIZ.");
+        
+        else if (a==1 && b==0) 
+            System.out.print(" KAZANDINIZ.");
+       
+        else if (a==1 && b==0) 
+            System.out.print(" KAZANDINIZ.");
+        else if(a==0 && b==2)
+            System.out.print(" KAZANDINIZ.");
+      /////////////////////////////////////////////////////////////////////////
+        else if(a==1 && b==2)
+            System.out.print(" KAYBETTİNİZ.");
+        else if(a==0 && b==1)
+            System.out.print(" KAYBETTİNİZ.");
+        else if(a==0 && b==1)
+            System.out.print(" KAYBETTİNİZ.");
+        else if(a==2 && b==0)
+            System.out.print(" KAYBETTİNİZ.");
+        else{
+            
+            System.out.println("YANLIŞ SAYI GİRDİNİZ!!!!!!!");
+        
+        }
+                
+    }
+    
+}
